@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Restaurant Name</h1>
+            <nav>
+                <ul>
+                    <br>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Delicious Food, Delivered Fresh</h2>
+            <p>Experience the taste of fine dining in the comfort of your home.</p>
+            <br>
+            <a href="#menu" class="btn">Explore Menu</a>
+            <br>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>OUR MENU</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="c:\Users\pranai sai\Downloads\grilled.jpg" alt="Dish 1">
+                    <h3>Grilled Salmon</h3>
+                    <p>₹549/-</p>
+                </div>
+                <div class="menu-item">
+                    <img src="http://www.simplesweetsavory.com/wp-content/uploads/2016/04/Chicken-Caesar-Salad-wide.jpg" alt="Dish 2">
+                    <h3>Caesar Salad</h3>
+                    <p>₹439/-</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.blackface.co.uk/wp-content/uploads/2017/03/shutterstock_489748663.jpg" alt="Dish 3">
+                    <h3>Beef Steak</h3>
+                    <p>₹559/-</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a family-owned restaurant committed to bringing you the freshest and finest dishes. Our chefs use the best local ingredients to create flavors you'll never forget.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurant Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
