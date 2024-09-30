@@ -1,0 +1,52 @@
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Mobile Menu Toggle
+const menuIcon = document.getElementById('menu-icon');
+const navList = document.getElementById('nav-list');
+
+menuIcon.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+
+// Form Validation
+const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = form.querySelector('input[type="text"]');
+    const email = form.querySelector('input[type="email"]');
+    const message = form.querySelector('textarea');
+
+    // Check if all fields are filled
+    if (name.value.trim() === '') {
+        alert('Please enter your name');
+        return;
+    }
+    if (!validateEmail(email.value)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    if (message.value.trim() === '') {
+        alert('Please enter your message');
+        return;
+    }
+
+    // If all validations pass
+    alert('Message sent successfully!');
+    form.reset();
+});
+
+// Email Validation Helper Function
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return re.test(String(email).toLowerCase());
+}
